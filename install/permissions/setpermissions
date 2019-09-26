@@ -1,0 +1,2 @@
+#!/bin/bash
+cat writables | xargs -i chmod -R 0777 {}

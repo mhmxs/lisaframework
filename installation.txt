@@ -1,0 +1,3 @@
+Install LISA patch to your computer!
+
+  * Unpack patch to your LISA root directory.

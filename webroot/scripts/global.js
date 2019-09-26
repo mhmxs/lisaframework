@@ -1,0 +1,1 @@
+var is_ie = (navigator.userAgent.toLowerCase().indexOf("msie") != -1);
