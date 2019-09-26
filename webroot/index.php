@@ -10,19 +10,30 @@
   GNU General Public License for more details.
 */
 
-error_reporting(E_ALL);
+/**
+ * Die with 503 Service not available error.
+ */
+function die503($msg = null)
+{
+	@ob_end_clean();
+	@header("HTTP/1.1 503 Server Unavailable", true, 503);
+	echo "503 error! " . $msg;
+	exit(503);
+}
+
+/**
+ * Check php version.
+ */ 
+
+if (strnatcmp(phpversion(), "5.3.0") < 0) {
+  die503("Requested PHP version : 5.3.0");
+}
 
 /**
  * Include bootstrap system or fail.
- *
  */
-if (include_once(dirname(dirname(__FILE__)) . "/libraries/bootstrap/bootstrap.php")) {
-	$core = new Core();
-	$core->run(HTTPRunner::useSessionHandler());
-} else {
-	header("HTTP/1.1 503 Service Unavailable", true, 503);
-	echo("<h1>503 Service Unavailable</h1>");
-	exit(-503);
+if (!include_once(dirname(dirname(__FILE__)) . "/system/boot/boot.php")) {
+	die503("Boot failed");
 }
 
 ?>

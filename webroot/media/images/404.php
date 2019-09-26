@@ -1,99 +1,100 @@
-<?
-include_once $_SERVER["DOCUMENT_ROOT"] . '/../libraries/classes/Util/ImageResize.php';
+<?php
+
+if (!include_once($_SERVER["DOCUMENT_ROOT"] . '/../libraries/Util/DirectoryHandler.php')) {
+	die;
+}
+if (!include_once($_SERVER["DOCUMENT_ROOT"] . '/../libraries/Util/ImageModifier.php')) {
+	die;
+}
+
 /**
  * StartResize
  * @author kovacsricsi
  */
-class StartResize
-{
+class StartResize {
 
-        private $baseDir;
-        private $basePath;
-        private $www;
+	private $baseDir;
+	private $newDir;
+	private $basePath;
+	private $www;
+	private $newFile;
+	private $baseFile;
+	private $width;
+	private $height;
+	private $ext;
+	private $type;
 
-        private $newFile;
-        private $baseFile;
-        private $width;
-        private $height;
-        private $ext;
+	public function __construct() {
+		$this->baseDir = dirname($_SERVER["REQUEST_URI"]);
+		$this->basePath = $_SERVER["DOCUMENT_ROOT"] . $this->baseDir;
+		$this->www = rtrim($_SERVER["DOCUMENT_ROOT"], "/");
 
-        public function __construct()
-        {
-                $this->baseDir = dirname($_SERVER{'REQUEST_URI'});
-                $this->basePath = $_SERVER["DOCUMENT_ROOT"].$this->baseDir;
-                $this->www = ereg_replace('\/$','',$_SERVER["DOCUMENT_ROOT"]);
+		$this->resizeImage();
+	}
 
-                $this->resizeImage();
-        }
+	private function resizeImage() {
+		$this->setMatches();
 
-        private function resizeImage()
-        {
-                $this->setMatches();
+		if (!file_exists($this->www . $this->baseFile . '.' . $this->ext)) {
+			$this->ImageNotFound();
+		}
 
-                $this->baseFile = preg_replace("!^/images/!", "/webroot/media/images/", $this->baseFile);
-                $this->newFile  = preg_replace("!^/images/!", "/webroot/media/images/", $this->newFile);
+		if (!is_dir($this->newDir)) {
+			\Util\DirectoryHandler::mkdirRecursive($this->newDir, "775");
+		}
 
-                if (file_exists($this->www.$this->baseFile.'.jpg')) {
-                        $this->ext = "jpg";
-                } elseif (file_exists($this->www.$this->baseFile.'.png')) {
-                        $this->ext = "png";
-                } elseif (file_exists($this->www.$this->baseFile.'.gif')) {
-                        $this->ext = "gif";
-                } else {
-                        $this->ImageNotFound();
-                }
+		if (!file_exists($this->newDir . basename($this->baseFile) . "." . $this->ext)) {
+			$img = new \Util\ImageModifier($this->www . $this->baseFile . "." . $this->ext);
+			$img->newdimension($this->width, $this->height, $this->type);
 
-                $image = new ImageResize($this->www . $this->baseFile . "." . $this->ext, $this->width, $this->height);
+			$img->generate($this->newDir . basename($this->baseFile) . "." . $this->ext);
+		}
+		$this->output();
+	}
 
-                $newDimension = $image->getNewDimension();
+	private function output() {
+		$ext = strtolower($this->ext);
+		if ($ext == "jpg") {
+			header('Content-type: image/jpeg');
+		} elseif ($ext == "jpeg") {
+			header('Content-type: image/jpeg');
+		} elseif ($ext == "png") {
+			header('Content-type: image/png');
+		} elseif ($ext == "gif") {
+			header('Content-type: image/gif');
+		} else {
+			$this->ImageNotFound();
+		}
 
-                if (!file_exists($this->www . $this->newFile . "." . $this->ext)) {
-                        $image->generateImage();
-                        $image->saveTo($this->www . $this->newFile . "." . $this->ext);
-                }
+		header('HTTP/1.1 200 OK');
 
-                $this->output();
-        }
+		readfile($this->newDir . basename($this->baseFile) . "." . $this->ext);
+		die();
+	}
 
-        private function output()
-        {
-                if ($this->ext == "jpg") {
-                        header('Content-type: image/jpeg');
-                } elseif ($this->ext == "png") {
-                        header('Content-type: image/png');
-                } elseif ($this->ext == "gif") {
-                        header('Content-type: image/gif');
-                } else {
-                        $this->ImageNotFound();
-                }
+	private function setMatches() {
+		$matches = array();
+		if (!preg_match("!($this->baseDir.*)_([0-9]+)x([0-9]+)(\.crop|\.fill||\.resize)\.(jpg|gif|png|jpeg)!i", $_SERVER["REQUEST_URI"], $matches)) {
+			$this->ImageNotFound();
+		} else {
+			list($this->newFile, $this->baseFile, $this->width, $this->height, $this->type, $this->ext ) = $matches;
 
-                header('HTTP/1.1 200 OK');
+			$this->type = ($this->type == "") ? "resize" : ltrim($this->type, ".");
 
-                readfile($this->www . $this->newFile . "." . $this->ext);
-                die();
-        }
+			$media = (strpos($this->baseDir, "/images/") === 0 || $this->baseDir == "/images" ) ? "/media" : "";
 
-        private function setMatches()
-        {
-                $matches = array();
+			$this->baseFile = $media . $this->baseFile;
+			$this->newFile = $media . $this->newFile;
+			$this->newDir = $this->www . "/" . trim(dirname($this->baseFile), "/") . "/" . $this->width . "x" . $this->height . "_" . $this->type . "/";
+		}
+	}
 
-                if (!preg_match("(($this->baseDir.*)_([0-9]*)x([0-9]*))", $_SERVER{'REQUEST_URI'}, $matches)) {
-                        $this->ImageNotFound();
-                } else {
-                        list($this->newFile, $this->baseFile, $this->width, $this->height, $this->ext) = $matches;
-                }
-
-                if(!$this->width and !$this->height) {
-                        $this->ImageNotFound();
-                }
-        }
-
-        private function ImageNotFound()
-        {
-                header("HTTP/1.0 404 Not Found");
-                die();
-        }
+	private function ImageNotFound() {
+		header("HTTP/1.0 404 Not Found");
+		die();
+	}
 
 }
 
 new StartResize();
+?>

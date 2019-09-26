@@ -1,10 +1,12 @@
 <IfModule mod_php5.c>
-    php_flag display_errors 1
-    php_value register_globals 0
-    php_value magic_quotes_gpc 0
+ 	php_flag display_errors 1
+	php_value register_globals 0
+	php_value magic_quotes_gpc 0
+	php_value magic_quotes_runtime 0
     php_value session.auto_start 0
     php_value session.use_trans_sid 0
     php_value session.use_cookies 1
+	php_value default_charset UTF-8
 </IfModule>
 
 <IfModule mod_rewrite.c>
