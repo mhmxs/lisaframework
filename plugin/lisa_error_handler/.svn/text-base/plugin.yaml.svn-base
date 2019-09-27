@@ -1,0 +1,5 @@
+plugin_class: \lisa_error_handler\Plugin
+
+services:
+  ErrorHandler: \lisa_error_handler\Handler
+

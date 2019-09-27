@@ -1,0 +1,3 @@
+[PageNotFoundException]
+service = "HelloWorld"
+call = "say404"

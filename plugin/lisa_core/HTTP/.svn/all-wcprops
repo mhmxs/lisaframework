@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1089/trunk/lisaframework/plugin/lisa_core/HTTP
+END
+HTTPException.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core/HTTP/HTTPException.php
+END
+HTTP.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1089/trunk/lisaframework/plugin/lisa_core/HTTP/HTTP.php
+END

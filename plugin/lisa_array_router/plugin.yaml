@@ -1,0 +1,7 @@
+plugin_class: \lisa_array_router\Plugin
+
+services:
+  ArrayRouter: \lisa_array_router\Router
+
+dependencies: lisa_core
+#, Core_API

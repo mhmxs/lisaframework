@@ -1,0 +1,7 @@
+plugin_class: \lisa_session_handler\Plugin
+
+services:
+  SessionHandler: \lisa_session_handler\Handler
+
+dependencies: lisa_core
+#Core_API

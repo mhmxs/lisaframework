@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/Config
+END
+ConfigNotFoundException.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/Config/ConfigNotFoundException.php
+END
+Reader.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/Config/Reader.php
+END
+Cache.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/Config/Cache.php
+END
+INITag.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/Config/INITag.php
+END

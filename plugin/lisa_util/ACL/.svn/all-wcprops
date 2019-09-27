@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL
+END
+IAccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/IAccess.php
+END
+Account.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/Account.php
+END
+Group.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/Group.php
+END
+ACLException.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/ACLException.php
+END
+ACL.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/ACL.php
+END

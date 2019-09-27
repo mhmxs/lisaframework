@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api
+END
+ISessionHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/ISessionHandler.php
+END
+AView.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/AView.php
+END
+IViewFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/IViewFactory.php
+END
+Plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/Plugin.php
+END
+AHTMLElement.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/AHTMLElement.php
+END
+IView.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/IView.php
+END
+AController.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/AController.php
+END
+IControllerFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/IControllerFactory.php
+END
+plugin.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/plugin.yaml
+END
+IRouter.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/IRouter.php
+END

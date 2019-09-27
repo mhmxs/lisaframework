@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHelper
+END
+RssFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHelper/RssFeed.php
+END
+Link.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/HttpHelper/Link.php
+END
+ScriptVars.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHelper/ScriptVars.php
+END
+Style.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/HttpHelper/Style.php
+END
+Title.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/HttpHelper/Title.php
+END
+Script.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core_api/HttpHelper/Script.php
+END
+Meta.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHelper/Meta.php
+END

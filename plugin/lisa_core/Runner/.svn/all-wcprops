@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core/Runner
+END
+RunnerException.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core/Runner/RunnerException.php
+END
+Core.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core/Runner/Core.php
+END
+HTTP.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core/Runner/HTTP.php
+END
+IRunner.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core/Runner/IRunner.php
+END
+Filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_core/Runner/Filter.php
+END

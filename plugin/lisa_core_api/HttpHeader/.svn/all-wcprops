@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHeader
+END
+Xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHeader/Xml.php
+END
+IHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHeader/IHeader.php
+END
+Html.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHeader/Html.php
+END
+NotFound404.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHeader/NotFound404.php
+END
+Json.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHeader/Json.php
+END
+File.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_core_api/HttpHeader/File.php
+END

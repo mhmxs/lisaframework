@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/ARO
+END
+File.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/ARO/File.php
+END
+AROException.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/ARO/AROException.php
+END
+AAdapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/ARO/AAdapter.php
+END
+ARO.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/ACL/ARO/ARO.php
+END

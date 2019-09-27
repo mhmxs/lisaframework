@@ -1,0 +1,14 @@
+plugin_class: \lisa_core\Plugin
+
+services:
+  Core: \lisa_core\Runner\Core
+  Http: \lisa_core\HTTP\HTTP
+  SimpleView: \lisa_core\View\Simple
+  JsonView: \lisa_core\View\Json
+
+hook_handlers:
+  init_plugin:
+    service: Core
+    handler: init_plugin
+    
+dependencies: lisa_core_api

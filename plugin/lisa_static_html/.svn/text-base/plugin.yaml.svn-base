@@ -1,0 +1,9 @@
+plugin_class: \lisa_static_html\Plugin
+
+services:
+  StaticHtmlGenerator: \lisa_static_html\Generator
+
+hook_handlers:
+  generate:
+    service: StaticHtmlGenerator
+    handler: generate

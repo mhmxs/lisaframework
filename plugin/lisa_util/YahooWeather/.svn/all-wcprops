@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/YahooWeather
+END
+yahoo.ini
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/YahooWeather/yahoo.ini
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/YahooWeather/Exception.php
+END
+YahooWeather.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_util/YahooWeather/YahooWeather.php
+END

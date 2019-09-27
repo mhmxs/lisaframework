@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1089/trunk/lisaframework/plugin/jin_core
+END
+plugin.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/jin_core/plugin.yaml
+END
+CorePlugin.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/jin_core/CorePlugin.class.php
+END
+init.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1089/trunk/lisaframework/plugin/jin_core/init.php
+END
+Context.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/jin_core/Context.php
+END

@@ -1,0 +1,11 @@
+[default]
+smtp_auth = "on"
+smtp_host = "host"
+smtp_secure = "ssl"
+smtp_port = "465"
+smtp_keep_alive = "on"
+smtp_user = "user"
+smtp_pass = "pass"
+
+[noAuth]
+smtp_auth = "off"

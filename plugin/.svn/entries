@@ -1,0 +1,52 @@
+10
+
+dir
+1118
+http://lisaframework.googlecode.com/svn/trunk/lisaframework/plugin
+http://lisaframework.googlecode.com/svn
+
+
+
+2012-03-31T10:27:58.701858Z
+1090
+kovacsricsi@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+011d8296-b4a3-11dd-b6ab-49f5beb571ba
+
+lisa_static_html
+dir
+
+lisa_util
+dir
+
+lisa_array_router
+dir
+
+jin_core
+dir
+
+lisa_session_handler
+dir
+
+lisa_core_api
+dir
+
+lisa_error_handler
+dir
+
+lisa_core
+dir
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_error_handler
+END
+plugin.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_error_handler/plugin.yaml
+END
+Handler.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1088/trunk/lisaframework/plugin/lisa_error_handler/Handler.php
+END
+Plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1086/trunk/lisaframework/plugin/lisa_error_handler/Plugin.php
+END
